@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.1">
+  <object class="tk.Toplevel" id="main_window">
+    <property name="background">#6464f4</property>
+    <property name="geometry">800x600</property>
+    <property name="height">200</property>
+    <property name="iconbitmap">download.png</property>
+    <property name="iconphoto">download.png</property>
+    <property name="width">200</property>
+    <child>
+      <object class="tk.Frame" id="frame_main">
+        <property name="background">#6464f4</property>
+        <property name="height">600</property>
+        <property name="width">800</property>
+        <layout manager="pack">
+          <property name="propagate">True</property>
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="tk.Label" id="app_name">
+            <property name="background">#6464f4</property>
+            <property name="font">{Droid Sans Fallback} 16 {}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="text" translatable="yes">TubeLoader</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property type="col" id="0" name="pad">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="entry_url">
+            <property name="background">#becee1</property>
+            <property name="font">{Arial} 12 {}</property>
+            <property name="foreground">#000000</property>
+            <property name="highlightbackground">#becee1</property>
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">paste the URL here</property>
+            <property name="width">60</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="pady">123</property>
+              <property name="propagate">True</property>
+              <property type="col" id="0" name="pad">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="btn_download">
+            <property name="background">#becee1</property>
+            <property name="font">{Arial} 12 {}</property>
+            <property name="foreground">#000000</property>
+            <property name="height">1</property>
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">Download</property>
+            <property name="width">7</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="pady">12</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+              <property type="col" id="0" name="pad">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="Download_span">
+            <property name="background">#6464f4</property>
+            <property name="font">{Arial} 12 {}</property>
+            <property name="foreground">#ffff00</property>
+            <property name="width">23</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">3</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
